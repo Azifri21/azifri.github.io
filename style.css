@@ -1,103 +1,154 @@
-.subPage {
-  width: 1000px;
-  max-width: 95%;
-  background-color: #ffffff;
-  outline: 3px solid #000000;
-  margin: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 0px 12px 12px;
-}
-
-.textBox {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
 h1, h2{
     text-align: center;
 }
 
-/* layout for boxes with image on left */
-.box-image-left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin: 2rem 0;
-    background-color: rgb(234, 236, 236);
+/* universal background color */
+body {
+  background-color: rgb(96, 150, 186); 
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
-.box-image-left img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
+
+/* area inside body where the content is */
+.subPage {
+  width: 1000px;
+  max-width: 95%;
+  background-color: rgb(231, 236, 239);
+  outline: 3px solid #000000;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 12px;
 }
-.text-section p {
-    margin-bottom: 20px;
+
+
+header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgb(39, 76, 119);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-family: sans-serif
     line-height: 1.6;
 }
+
+footer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgb(39, 76, 119);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-family: sans-serif
+    line-height: 1.6;
+}
+
+nav { background: rgb(39, 76, 119); }
+nav ul { display: flex; flex-wrap: wrap; list-style: none; }
+nav li { flex: 1; }
+nav a { display: block; padding: 1rem; text-decoration: none; color: #fff; text-align: center; }
+
+main { padding: 1rem; }
+
+/*layout for boxes with an image on top */
+.box-image-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(163, 206, 241);
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#terra-prima {
+    background-color: rgb(39, 76, 119);
+}
+
+#children-of-the-meteorite {
+    background-color: rgb(39, 76, 119);
+}
+
+#others{
+    background-color: rgb(39, 76, 119);
+}
+
+/* layout for boxes with image on left */
+.box-image-left {
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin: auto;
+    background-color: rgb(163, 206, 241);
+    margin-bottom: 1rem;
+}
+
+.box-image-left-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.box-image-left-text {
+    flex: 1;
+}
+
 @media (max-width: 768px) {
     .box-image-left {
         flex-direction: column;
         text-align: center;
     }
+
+    .box-image-left-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*layout for boxes with buttons */
+.box-with-buttons {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: auto;
+    background-color: rgb(231, 236, 239);
+    margin-bottom: 1rem;
+}
+
+.box-with-buttons-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.box-with-buttons-text {
+    flex: 1;
+    border-radius: 10px;
+    border-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .box-with-buttons {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-with-buttons-image {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: sans-serif; line-height: 1.6; }
-header, footer { background: #333; color: #fff; padding: 1rem; text-align: center; }
-nav { background: #444; }
-nav ul { display: flex; flex-wrap: wrap; list-style: none; }
-nav li { flex: 1; }
-nav a { display: block; padding: 1rem; text-decoration: none; color: #fff; text-align: center; }
-main { padding: 1rem; }
-@media (max-width: 600px) {
-    nav ul { flex-direction: column; }
-}
 
-/*for boxes with buttons */
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        .container {
-            display: flex;
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .image-section {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .image-section img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .text-section {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .text-section p {
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
 
         .buttons {
             display: flex;
