@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
 h1, h2{
     text-align: center;
 }
@@ -109,7 +111,7 @@ main { padding: 1rem; }
 }
 
 .product-details {
-    line-height: 0.5;
+    line-height: 0.9;
     background-color: rgba(251, 253, 255, 0.858);
     padding: 1rem;
     margin-bottom: 1rem;
