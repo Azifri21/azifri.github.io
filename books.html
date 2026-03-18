@@ -13,6 +13,12 @@
         </script>
     <!-- End Google tag (gtag.js) -->
 
+    <!-- Paypal -->
+        <script 
+        src="https://www.paypal.com/sdk/js?client-id=BAAD1zJtbE40OjVVkEhhVILkPKFaclvGacws1xxNjdJymgYzKWQsEXyvirjhYiN21TeK2Smot4fLEIAEzc&components=hosted-buttons&disable-funding=venmo&currency=CHF">
+        </script>
+    <!-- End Paypal -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="style.css" media="all">
@@ -38,16 +44,18 @@
 
         <main>
             
-            <h2>Books</h2>
+            <h2>Books & Bookstore</h2>
+                <p class="narrow">Find out more about my stories and purchase copies when available. Some are also available to read online for free.</p>
+ 
                 <h3>Go to:</h3>
                     <nav id="books-nav">
-                        <a href="#terra-prima">Terra Prima</a>
-                        <a href="#children-of-the-meteorite">Children of the Meteorite</a>
-                        <a href="#grandmas-hometown">Grandma's Hometown</a>
-                        <a href="#stop-on-request">Stop on Request</a>
-                        <a href="#adventure-in-new-world">Adventure in New World</a>
-                        <a href="#the-mixtape">The Mixtape</a>
-                        <a href="#nanoparticles-in-my-coffee">Nanoparticles in my Coffee</a>
+                        <a href="#terra-prima" class="books-navbutton">Terra Prima</a>
+                        <a href="#children-of-the-meteorite" class="books-navbutton">Children of the Meteorite</a>
+                        <a href="#grandmas-hometown" class="books-navbutton">Grandma's Hometown</a>
+                        <a href="#stop-on-request" class="books-navbutton">Stop on Request</a>
+                        <a href="#adventure-in-new-world" class="books-navbutton">Adventure in New World</a>
+                        <a href="#the-mixtape" class="books-navbutton">The Mixtape</a>
+                        <a href="#nanoparticles-in-my-coffee" class="books-navbutton">Nanoparticles in my Coffee</a>
                     </nav>
             
             <div class="box-image-top" id="terra-prima">
@@ -59,7 +67,14 @@
 
                 <div class="box-with-buttons">
                     <div class="box-with-buttons-image">
-                        <img src="images/cover1.png" width=90% length="auto" alt="Description">
+                        <!-- Paypal buy button -->
+                         <div id="paypal-container-ZEQ4VBCQ4UK2E"></div>
+                        <script>
+                            paypal.HostedButtons({
+                            hostedButtonId: "ZEQ4VBCQ4UK2E",
+                            }).render("#paypal-container-ZEQ4VBCQ4UK2E")
+                        </script>
+                        <!-- End Paypal buy button -->
                     </div>
                     <div class="box-with-buttons-text">
                         <h3>Terra Prima - book one (chapters 1-9)</h3>
@@ -133,12 +148,13 @@
                 <div class="box-with-buttons">
                     <div class="box-with-buttons-image">
                         <img src="images/merch.png" width=90% length="auto" alt="Description">
+                        <a href="https://tapas.io/merchshop/Azifri" target="_blank" style="background-color: #FF9900; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; float: left;">Buy on Tapas</a>                    
+
                     </div>
                     <div class="box-with-buttons-text">
                         <h3>Did someone say merch?</h3>
                         <p>The official Terra Prima merch shop is hosted on Tapas.io.</p>
-                        <p>All items are made to order after purchase at a print shop nearest to the buyer's location.</p>
-                        <a href="https://tapas.io/merchshop/Azifri" target="_blank" style="background-color: #FF9900; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Buy on Tapas</a>                    
+                        <p>All items are made to order after purchase at a print shop nearest to the buyer's location. Orders are fulfilled by <a href="https://www.printful.com/" target="_blank">Printful</a>.</p>
                     </div>
                 </div>                
 
@@ -152,7 +168,7 @@
             </div>
 
 
-            <div id="back-to-top">
+            <div class="back-to-top">
                 <p><a href="#top">Back to top</a></p>
             </div>
 
@@ -247,8 +263,9 @@
 
             </div>
 
-            <div id="back-to-top">
-                <a href="#top">Back to top</a>
+
+            <div class="back-to-top">
+                <p><a href="#top">Back to top</a></p>
             </div>
 
 
@@ -263,7 +280,14 @@
 
                 <div class="box-with-buttons" id="adventure-in-new-world">
                     <div class="box-with-buttons-image">
-                        <img src="images/minecraft1.png" width=90% length="auto" alt="Adventure in New World comic cover">
+                        <!--Paypal buy button-->
+                            <div id="paypal-container-AQGCATUU4GLBY"></div>
+                            <script>
+                            paypal.HostedButtons({
+                                hostedButtonId: "AQGCATUU4GLBY",
+                            }).render("#paypal-container-AQGCATUU4GLBY")
+                            </script>
+                        <!--End Paypal buy button-->
                     </div>
                     <div class="box-with-buttons-text">
                         <h3>Adventure in New World</h3>
@@ -288,7 +312,15 @@
 
                 <div class="box-with-buttons" id="stop-on-request">
                     <div class="box-with-buttons-image">
-                        <img src="images/train1.png" width=90% length="auto" alt="Stop on Request comic cover">
+                        <!--Paypal buy button-->
+                            <div id="paypal-container-WFKFQB7KTFU96"></div>
+                            <script>
+                            paypal.HostedButtons({
+                                hostedButtonId: "WFKFQB7KTFU96",
+                            }).render("#paypal-container-WFKFQB7KTFU96")
+                            </script>
+                        <!--End Paypal buy button-->
+
                     </div>
                     <div class="box-with-buttons-text">
                         <h3>Stop on Request</h3>
@@ -300,18 +332,20 @@
                             <p>Number of pages: 13</p>
                             <p>Publication date: June 16, 2024</p>
                         </div>
-
-                        <div class="buttons">
-                            <button>Button 1</button>
-                            <button>Button 2</button>
-                        </div>
                     </div>
                 </div>
 
 
                 <div class="box-with-buttons" id="grandmas-hometown">
                     <div class="box-with-buttons-image">
-                        <img src="images/grandma1.png" width=90% length="auto" alt="Grandma's Hometown comic cover">
+                        <!--Paypal buy button-->
+                            <div id="paypal-container-L9JS9HRVV4CC4"></div>
+                            <script>
+                            paypal.HostedButtons({
+                                hostedButtonId: "L9JS9HRVV4CC4",
+                            }).render("#paypal-container-L9JS9HRVV4CC4")
+                            </script>
+                        <!--End Paypal buy button-->
                     </div>
                     <div class="box-with-buttons-text">
                         <h3>Grandma's Hometown</h3>
@@ -334,6 +368,7 @@
                 <div class="box-with-buttons" id="nanoparticles-in-my-coffee">
                     <div class="box-with-buttons-image">
                         <img src="images/anthology1.png" width=90% length="auto" alt="Anthology cover">
+                        <a href="https://www.amazon.com/Over-Coffee-Anthology-Faeries-Ents-ebook/dp/B07TXPV3Z6" target="_blank" style="background-color: #FF9900; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; float: left;">Buy on Amazon</a>
                     </div>
                     <div class="box-with-buttons-text">
                         <h3>Nanoparticles in my Coffee</h3>
@@ -349,14 +384,15 @@
                             <p>Number of pages: 96</p>
                             <p>Publication date: July 02, 2019</p>
                         </div>
-                        <a href="https://www.amazon.com/Over-Coffee-Anthology-Faeries-Ents-ebook/dp/B07TXPV3Z6" target="_blank" style="background-color: #FF9900; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Buy on Amazon</a>
+
                     </div>
-                </div>   
+                </div>
 
             </div>
 
-            <div id="back-to-top">
-                <a href="#top">Back to top</a>
+
+            <div class="back-to-top">
+                <p><a href="#top">Back to top</a></p>
             </div>
 
 
