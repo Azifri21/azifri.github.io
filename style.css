@@ -91,7 +91,9 @@ nav {
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    background-color: rgb(96, 150, 186); 
+    /*background-color: rgb(96, 150, 186); */
+    background-image: linear-gradient(to bottom right, rgb(96, 150, 186), rgb(239, 248, 255));
+    font-weight: bold;
     width: 40px;
 }
 
@@ -294,7 +296,7 @@ a:active {
 /*layout for boxes with buttons */
 .box-with-buttons {
     display:flex;
-    align-items: center;
+    align-items: top;
     gap: 1rem;
     padding: 1rem;
     margin: auto;
