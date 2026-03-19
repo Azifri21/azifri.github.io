@@ -15,3 +15,7 @@ Site analytics are from Google Analytics: https://analytics.google.com/
 
 Cookies consent banner is from CookiesYes: https://www.cookieyes.com/
 
+Payments are fulfilled via PayPal: https://www.paypal.com/
+
+Automatic email delivery of content after purchase was automated via: https://www.relay.app/
+
