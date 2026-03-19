@@ -43,7 +43,7 @@ header {
     padding: 0;
     background-image: url(images/planet-bg.png);
     background-size: cover;
-    background: rgb(39, 76, 119);
+    /*background: rgb(39, 76, 119);*/
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -54,15 +54,24 @@ footer {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: rgb(39, 76, 119);
+    background-image: url(images/planet-bg.png);
+    background-size: cover;
+    /*background: rgb(39, 76, 119);*/
     color: #fff;
     padding: 1rem;
     text-align: center;
     font-family: sans-serif
 }
 
+#link-color {
+    color: rgb(255, 249, 185);
+}
+
 nav {
-    background: rgb(39, 76, 119);
+    border-top: #000000 solid 3px;
+    background-image: url(images/planet-bg.png);
+    background-size: cover;
+    /*background: rgb(39, 76, 119);*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -115,10 +124,12 @@ nav {
 }
 
 a:link,{
+    color: rgb(0 ,0 , 0);
     text-decoration: none;
 }
 
 a:visited {
+    color: rgb(48, 58, 122);
     text-decoration: none;
 }
 
@@ -234,10 +245,13 @@ a:active {
 }
 
 
-/*layout for bulletin board*/
-.board {
+/*layout for bulletin board on BIG screens*/
+#board-big-screen {
     background-image: url(images/big-tv.png);
         background-size: cover;
+    h3 {
+        text-align: center;
+    }
     text-align: left;
     color: rgb(243, 243, 8);
     gap: 1rem;
@@ -245,11 +259,33 @@ a:active {
     border-radius: 1rem;
     margin: 2rem 5rem;
     font-family: 'Science Gothic', sans-serif;
+    display: block;
+    height: 450px;
 }
 
-@media (max-width: 768px) {
-    .board {
-        margin: 1rem;
+@media only screen and (max-width: 990px) {
+    #board-big-screen {
+        display: none;
+    }
+}
+
+
+/*layout for bulletin board on SMALL screens*/
+#board-small-screen {
+    background-image: url(images/tv-bg.png);
+        background-size: cover;
+    text-align: left;
+    color: rgb(243, 243, 8);
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem 5rem;
+    font-family: 'Science Gothic', sans-serif;
+}
+
+@media only screen and (min-width: 990px) {
+    #board-small-screen {
+        display: none;
     }
 }
 
