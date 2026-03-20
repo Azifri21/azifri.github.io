@@ -353,3 +353,15 @@ a:active {
         height: auto;
     }
 }
+
+figure {
+    text-align: center;
+    display: block;
+}
+    
+@media only screen and (max-width: 800px) {
+    img {
+        width: 90%;
+
+    }
+}
