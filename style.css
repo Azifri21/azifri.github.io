@@ -14,8 +14,12 @@ body {
     padding: 20px;
 }
 
+main {
+    margin-top: 2rem;
+}
+
 .narrow {
-    margin: 0rem 2rem;
+    margin: 0rem 1rem;
 }
 
 /* area inside body where the content is */
@@ -46,6 +50,13 @@ header {
     padding: 1rem;
     text-align: center;
     font-family: sans-serif
+}
+
+.title {
+    color:rgb(243, 240, 161)
+}
+.small-title {
+    color: bisque;
 }
 
 footer {
@@ -79,9 +90,9 @@ nav {
     text-align: center;
 }
 
-.navbutton {
+.navbutton1 {
     display: inline-block;
-    padding: 1rem 5rem;
+    padding: 0.5rem 2rem;
     margin-bottom: 0.3rem;
     text-decoration: none;
     color: #fff;
@@ -92,8 +103,26 @@ nav {
     /*background-color: rgb(96, 150, 186); */
     background-image: linear-gradient(to bottom right, rgb(96, 150, 186), rgb(239, 248, 255));
     font-weight: bold;
-    width: 40px;
+    width: fit-content;
 }
+
+.navbutton2 {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    /*background-color: rgb(96, 150, 186); */
+    background-image: linear-gradient(to bottom right, rgb(222, 172, 87), rgb(239, 248, 255));
+    font-weight: bold;
+    width: fit-content;
+}
+
+
 
 #books-nav {
     display: flex;
@@ -121,10 +150,6 @@ nav {
     font-size: 1rem;
     cursor: pointer;
     background-color: rgb(96, 150, 186); 
-}
-
-.books-navbutton {
-    background-image: linear-gradient(to bottom right, rgb(24, 107, 24), rgb(53, 137, 14));
 }
 
 a:link,{
@@ -159,15 +184,12 @@ a:active {
 }
 
 #terra-prima {
-    background-color: rgb(39, 76, 119);
 }
 
 #children-of-the-meteorite {
-    background-color: rgb(39, 76, 119);
 }
 
 #others{
-    background-color: rgb(39, 76, 119);
 }
 
 #tp-bg {
@@ -175,7 +197,6 @@ a:active {
     background-size: cover;
     padding: 1rem;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
 }
 
@@ -184,7 +205,6 @@ a:active {
     background-size: cover;
     padding: 1rem;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
 }
 
@@ -193,7 +213,6 @@ a:active {
     background-size: cover;
     padding: 1rem;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
 }
 
@@ -205,7 +224,7 @@ a:active {
 
 .product-details {
     line-height: 0.9;
-    background-color: rgba(251, 253, 255, 0.858);
+    background-color: rgb(231, 236, 239);
     padding: 0.1rem 0.8rem;
     margin-bottom: 1rem;
 }
@@ -281,9 +300,9 @@ a:active {
     text-align: left;
     color: rgb(243, 243, 8);
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
-    margin: 2rem 5rem;
+    margin-top: 1.5rem;
     font-family: 'Science Gothic', sans-serif;
 }
 
@@ -302,8 +321,12 @@ a:active {
     gap: 1rem;
     padding: 1rem;
     margin: auto;
-    background-color: rgb(231, 236, 239);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 1rem;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(39, 76, 119);
+
 }
 
 .box-with-buttons-image {
@@ -330,30 +353,3 @@ a:active {
         height: auto;
     }
 }
-
-
-
-/*buttons*/
-        .button {
-            display: flex;
-            gap: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-        @media (max-width: 768px) {
-            .button {
-                flex-wrap: wrap;
-            }
-        }
