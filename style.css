@@ -43,10 +43,12 @@ header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to top, #3204fd2f, #9907fa30), url(images/planet-bg.png) no-repeat top center;
+    /*
     background-image: url(images/planet-bg.png);
     background-size: cover;
-    /*background: rgb(39, 76, 119);*/
-    color: #fff;
+    background: rgb(39, 76, 119);*/
+    color: #fff895;
     padding: 1rem;
     text-align: center;
     font-family: sans-serif
@@ -193,7 +195,7 @@ a:active {
 }
 
 #tp-bg {
-    background-image: url(images/tpbg.png);
+    background-image: url(images/bgterraprima.png);
     background-size: cover;
     padding: 1rem;
     border-radius: 10px;
