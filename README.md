@@ -19,4 +19,4 @@ Payments are fulfilled via PayPal: https://www.paypal.com/
 
 Automatic email delivery of content after purchase was automated via: https://www.relay.app/
 
-Email subscription box is Mailchimp: https://mailchimp.com/
+Email subscription by Mailchimp: https://mailchimp.com/
