@@ -384,3 +384,19 @@ figure {
 #mce-responses {
     padding-top: 1rem;
 }
+
+.social-media-box {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-media-box img {
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .social-media-box {
+        width: 80%;
+    }
