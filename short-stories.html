@@ -14,9 +14,7 @@
     <!-- End Google tag (gtag.js) -->
 
     <!-- Paypal -->
-        <script 
-        src="https://www.paypal.com/sdk/js?client-id=BAAD1zJtbE40OjVVkEhhVILkPKFaclvGacws1xxNjdJymgYzKWQsEXyvirjhYiN21TeK2Smot4fLEIAEzc&components=hosted-buttons&disable-funding=venmo&currency=CHF">
-        </script>
+        <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="Q6DRGGKYGPMBU"></script>
     <!-- End Paypal -->
 
     <meta charset="UTF-8">
@@ -48,7 +46,15 @@
         </nav>
 
         <main>
-          
+
+            <div id="paypal-cart-button-container">
+                <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+                <script>
+                    cartPaypal.Cart({ id: "pp-view-cart" })
+                </script>
+            </div>
+
+
             <div id="others">
                 <div id="others-bg">
                     <h1 id="semitransparent">Short stories, zines and anthologies</h1>
@@ -60,7 +66,10 @@
                 <div class="box-with-buttons" id="painted-star">
                     <div class="box-with-buttons-image">
                         <!--Paypal buy button-->
-
+                            <paypal-add-to-cart-button data-id="KWYTWFCA7QGYU"></paypal-add-to-cart-button>
+                            <script>
+                            cartPaypal.AddToCart({ id: "KWYTWFCA7QGYU" })
+                            </script>
                         <!--End Paypal buy button-->
                     </div>
                     <div class="box-with-buttons-text">
@@ -83,11 +92,9 @@
                 <div class="box-with-buttons" id="adventure-in-new-world">
                     <div class="box-with-buttons-image">
                         <!--Paypal buy button-->
-                            <div id="paypal-container-AQGCATUU4GLBY"></div>
+                            <paypal-add-to-cart-button data-id="TSMAL6WFXV8YE"></paypal-add-to-cart-button>
                             <script>
-                            paypal.HostedButtons({
-                                hostedButtonId: "AQGCATUU4GLBY",
-                            }).render("#paypal-container-AQGCATUU4GLBY")
+                            cartPaypal.AddToCart({ id: "TSMAL6WFXV8YE" })
                             </script>
                         <!--End Paypal buy button-->
                     </div>
@@ -113,11 +120,9 @@
                 <div class="box-with-buttons" id="stop-on-request">
                     <div class="box-with-buttons-image">
                         <!--Paypal buy button-->
-                            <div id="paypal-container-AQGCATUU4GLBY"></div>
+                            <paypal-add-to-cart-button data-id="BBYHTBBTQ6X98"></paypal-add-to-cart-button>
                             <script>
-                            paypal.HostedButtons({
-                                hostedButtonId: "AQGCATUU4GLBY",
-                            }).render("#paypal-container-AQGCATUU4GLBY")
+                            cartPaypal.AddToCart({ id: "BBYHTBBTQ6X98" })
                             </script>
                         <!--End Paypal buy button-->
 
@@ -142,11 +147,9 @@
                 <div class="box-with-buttons" id="grandmas-hometown">
                     <div class="box-with-buttons-image">
                         <!--Paypal buy button-->
-                            <div id="paypal-container-L9JS9HRVV4CC4"></div>
+                            <paypal-add-to-cart-button data-id="MNZ39KRFZEKR2"></paypal-add-to-cart-button>
                             <script>
-                            paypal.HostedButtons({
-                                hostedButtonId: "L9JS9HRVV4CC4",
-                            }).render("#paypal-container-L9JS9HRVV4CC4")
+                            cartPaypal.AddToCart({ id: "MNZ39KRFZEKR2" })
                             </script>
                         <!--End Paypal buy button-->
                     </div>
