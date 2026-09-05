@@ -14,9 +14,7 @@
     <!-- End Google tag (gtag.js) -->
 
     <!-- Paypal -->
-        <script 
-        src="https://www.paypal.com/sdk/js?client-id=BAAD1zJtbE40OjVVkEhhVILkPKFaclvGacws1xxNjdJymgYzKWQsEXyvirjhYiN21TeK2Smot4fLEIAEzc&components=hosted-buttons&disable-funding=venmo&currency=CHF">
-        </script>
+        <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="Q6DRGGKYGPMBU"></script>
     <!-- End Paypal -->
 
     <meta charset="UTF-8">
@@ -49,12 +47,23 @@
         </nav>
 
         <main>
+
+            <div id="paypal-cart-button-container">
+                <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+                <script>
+                    cartPaypal.Cart({ id: "pp-view-cart" })
+                </script>
+            </div>
           
             <div id="children-of-the-meteorite">
                 <div id="cotm-bg">
                     <h1 id="semitransparent">Children of the Meteorite</h1>
                     <p id="semitransparent">Twenty years have passed since the Great Collapse, and the world has been reclaimed by nature — but not the nature we once knew. Colossal trees and mutated vegetation now dominate the landscape, and humanity's only weapon against the monsters that roam the wildland, are poisonous crystals found deep inside the infested forest.</p>
                     <p id="semitransparent">When the crystal hunter Rosario and her young apprentices Stefan and Franziska accidentally discover a swarm of monsters threatening to overrun a nearby settlement, their attempt to warn the town will inadvertently uncover a conspiracy that stems from the origin of the Collapse itself.</p>
+                </div>
+
+                <div >
+                    <h2>The Books</h2>
                 </div>
 
                 <div class="box-with-buttons">
@@ -123,6 +132,32 @@
                     <p>You can also read an early version of Children of the Meteorite for free on Tapas.io. Don't forget to leave a comment!</p>
                     <a href="https://tapas.io/series/Children-of-the-Meteorite/info" target="_blank" style="background-color: #FF9900; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Read on Tapas</a>
                 </div>        
+
+                <div >
+                    <h2>Prints & Stickers</h2>
+                </div>
+
+                <div class="box-with-buttons">
+
+                    <div class="box-with-buttons-text">
+                        <div class="product-details">    
+                            <paypal-add-to-cart-button data-id="3GT6K3MB9GCDJ"></paypal-add-to-cart-button>
+                            <script>
+                            cartPaypal.AddToCart({ id: "3GT6K3MB9GCDJ" })
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="box-with-buttons-text">
+                        <div class="product-details">    
+                            <paypal-add-to-cart-button data-id="RHNCXY98JW45A"></paypal-add-to-cart-button>
+                            <script>
+                            cartPaypal.AddToCart({ id: "RHNCXY98JW45A" })
+                            </script>                        </div>
+                    </div>
+
+                </div>  
+
 
             </div>
 
